@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/home/query",
+    "pages/home/list"
+    
+   
+  ],
+  "window":{
+    "navigationStyle":"custom"
+  }
+}

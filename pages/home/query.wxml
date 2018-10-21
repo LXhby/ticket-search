@@ -1,0 +1,29 @@
+<!--pages/home/query.wxml-->
+<view class="container">
+
+  <!-- 头部 -->
+  <view class="head-bg">
+    <image src="/images/header.png" mode="widthFix"></image>
+  </view>
+
+  <form class="query-form" bindsubmit='query'>
+    <view class="city-row">
+      <input name="from"/>
+      <image src="/images/tab.png"></image>
+      <input name="to"/>
+    </view>
+
+    <view class="time-row">
+      <picker mode="date" bindchange='setTrainDate' start="{{start}}" end="{{end}}">
+        <input disabled name="trainDate" value='{{trainDate}}'/>
+      </picker>
+    </view>
+
+    <view class="submit-btn">
+      <button form-type="submit">
+        提交
+      </button>
+    </view>
+
+  </form>
+</view>
